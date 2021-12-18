@@ -14,44 +14,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
   </head>
   <body class="page">
     <!--Header-->
-    <header class="page-header">
-      <div class="container navigate">
+    <header class="header">
+      <div class="header__container container">
         <nav class="navi">
-          <a class="logo" href="./index.html"
-            ><span class="logo-half">Web</span>Studio</a
-          >
+          <a class="logo logo--header" href="./index.html">
+            <span class="logo__text logo__text--black">Web</span>
+            Studio
+            </a>
           <!--Menu-->
-          <ul class="menu">
-            <li class="item"><a class="link current" href="">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+          <ul class="navi__menu">
+            <li class="navi__menu-item">
+              <a class="navi__menu-link navi__menu-link--сurrent" href="">Студия</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="navi__menu-item">
+              <a href="./portfolio.html" class="navi__menu-link">Портфолио</a>
+            </li>
+            <li class="navi__menu-item"><a href="" class="navi__menu-link">Контакты</a></li>
           </ul>
+          </nav>
           <!--Connect-->
-          <ul class="connect">
-            <li class="item">
-              <a class="link icon-mail" href="mailto:info@devstudio.com">
-                <svg class="connect-icon i-mail">
+          <ul class="header__connect">
+            <li class="header__connect-item">
+              <a class="header__connect-link" href="mailto:info@devstudio.com">
+                <svg class="header__connect-icon i-mail">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a class="link icon-phone" href="tel:+380961111111"
-                ><svg class="connect-icon i-phone">
+            <li class="header__connect-item">
+              <a class="header__connect-link" href="tel:+380961111111"
+                ><svg class="header__connect-icon i-phone">
                   <use href="./images/icons.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
+        
       </div>
     </header>
     <main>
