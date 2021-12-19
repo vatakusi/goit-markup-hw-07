@@ -18,37 +18,43 @@
   </head>
   <body class="page">
     <!--Header-->
-    <header class="page-header">
-      <div class="container navigate">
+    <header class="header">
+      <div class="header__container container">
         <nav class="navi">
-          <a class="logo" href="./index.html"
-            ><span class="logo-half">Web</span>Studio</a
-          >
+          <a class="logo logo--header" href="./index.html">Web
+            <span class="logo__text logo__text--black">Studio</span>
+            
+            </a>
           <!--Menu-->
-          <ul class="menu">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item"><a href="" class="link current">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+          <ul class="navi__menu">
+            <li class="navi__menu-item">
+              <a class="navi__menu-link navi__menu-link--сurrent" href="">Студия</a>
+            </li>
+            <li class="navi__menu-item">
+              <a href="./portfolio.html" class="navi__menu-link">Портфолио</a>
+            </li>
+            <li class="navi__menu-item"><a href="" class="navi__menu-link">Контакты</a></li>
           </ul>
+          </nav>
           <!--Connect-->
-          <ul class="connect">
-            <li class="item">
-              <a class="link icon-mail" href="mailto:info@devstudio.com">
-                <svg class="connect-icon i-mail">
+          <ul class="header__connect">
+            <li class="header__connect-item">
+              <a class="header__connect-link" href="mailto:info@devstudio.com">
+                <svg class="header__connect-icon i-mail">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a class="link icon-phone" href="tel:+380961111111"
-                ><svg class="connect-icon i-phone">
+            <li class="header__connect-item">
+              <a class="header__connect-link" href="tel:+380961111111"
+                ><svg class="header__connect-icon i-phone">
                   <use href="./images/icons.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
+        
       </div>
     </header>
     <main>
@@ -275,17 +281,17 @@
 
     <!--Footer-->
     <footer class="foot">
-      <div class="container">
-        <div class="foot-greed1">
-          <a class="logo" href="./index.html"
-            ><span class="logo-half">Web</span>Studio</a
-          >
-          <address class="adress">
-            <p class="where">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="call" href="mailto:info@devstudio.com"
+      <div class="foot__container container">
+        <div class="foot__greed1">
+          <a class="logo foot__logo" href="./index.html">Web
+            <span class="logo__text logo__text--white">Studio</span>
+            </a>
+          <address class="foot__container-adress">
+            <p class="foot__container-adress--where">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="foot__container-adress--call" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a class="call" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="foot__container-adress--call" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </div>
         <div class="foot-greed2">

@@ -6,81 +6,76 @@
   background-color: var(--second-backgraund-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.foot .container {
-  display: flex;
-}
+  &__container {
+    display: flex;
 
-.foot .logo {
-  width: 145px;
+    &-adress {
+      font-style: normal;
 
-  margin-bottom: 20px;
-  color: var(--second-title-color);
-}
+      &--where {
+        color: var(--second-text-connect);
+        margin-bottom: 9px;
+      }
 
-.adress {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-}
+      &--call {
+        display: flex;
+        align-items: center;
+        width: 128px;
+        margin-bottom: 9px;
+        color: var(--second-text-connect);
+        /* color: var(--primery-text-color); */
 
-.where {
-  color: var(--second-title-color);
-  margin-bottom: 9px;
-}
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.call {
-  color: var(--second-text-connect);
-}
+        &:hover,
+        &:focus {
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
 
-.call:hover,
-.call:focus {
-  color: var(--accent-color);
-}
-
-.call {
-  display: flex;
-  align-items: center;
-  color: var(--primery-text-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress .call {
-  width: 128px;
-  margin-bottom: 9px;
-}
-
-.foot-greed2 h3 {
-  padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--second-title-color);
+  & .logo {
+    width: 145px;
+    margin-bottom: 20px;
+  }
 }
 
 .foot-greed2 {
   margin-top: 12px;
   margin-left: 70px;
+
+  & h3 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+  }
 }
 
-.circle-frame.foot-frame {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--second-title-color);
+.circle-frame {
+  margin-right: 10px;
+  border-radius: 50%;
 
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &.foot-frame {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--second-title-color);
 
-.circle-frame.foot-frame:hover,
-.circle-frame.foot-frame:focus {
-  background-color: var(--accent-color);
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.foot-frame .slink {
-  fill: var(--second-title-color);
+    & .slink {
+      fill: var(--second-title-color);
+    }
+  }
+
+  &.foot-frame:hover,
+  &.foot-frame:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 div.f-form-tumb {
